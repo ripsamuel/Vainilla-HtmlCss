@@ -5,11 +5,126 @@
         <meta name="description "  content = " Notas de html y css" />
         <meta name="robots" content =" index,follow" />  <!--atuorzacion de follow y poscionamiento para robots --> 
         <title>Mi pagina web </title>
-        <meta name = "viewport" content="width=device-width , inictial-scale=1.0">  
+        <meta name = "viewport" content="width=device-width , initial-scale=1.0">  
         <link rel "stylesheet" href="./style.css">
     </head>
     <body>
-        
+        <header>
+            <nav>Barra de navegacion </nav>
+        </header>
+        <main>
+            <section>
+                Seccion
+                <article>
+                    Articulo 
+
+                </article>
+            </section>
+
+            <div  id="first-form">
+                FORMULARIO CON ATRIBUTOS TIPOS, AUTOCOMPLETE Y REQUIRED
+
+                <form  action="entri point">
+                    
+                    <label for="inicio-programacion">
+                        <span>¿Desde cuando programas?</span>
+                        <input type="date" id="inicio-programacion" />
+                    </label>
+
+                    <label for="semana">
+                        <span>Hora</span>
+                        <input type="week" id="semana" name="semana"/>
+                    </label>
+
+                    <label for="mes">
+                        <span>Mes</span>
+                        <input type="month" id="mes" name="mes"/>
+                    </label>
+
+                    <label for="horario">
+                        <span>¿A que hora te akuestas ?</span>
+                        <input type="time" id="horario"/>
+                    </label>
+
+                    <label for="nombre">
+                        <span>Tu nombre</span>
+                        <input type="text" name="nombre" id="nombre" autocomplete="name" required placeholder="tu nombre"/>
+                    </label>
+                    <label for="nombre">
+                        <span>Tu email</span>
+                        <input type="email" name="correo" id="correo" autocomplete="email" required/>
+                    </label>
+                    <label for="nombre">
+                        <span>pais</span>
+                        <input type="text" name="pais" id="pais" autocomplete="country" required/>
+                    </label>
+                    <label for="nombre">
+                        <span>Tu codigo postal</span>
+                        <input type="text" name="cp" id="cp" autocomplete="postal-code" required/>
+                    </label>
+                    
+                    <label for="calendario">
+                        <span>Calendario</span>
+                        <input type="datetime-local" id="calendario" name="calendario"/>
+                    </label>
+
+
+                    <input type="submit" />
+
+                    
+                </form>
+       
+            </div>
+
+
+
+
+
+
+                
+            <!-- 
+
+    VIDEOSSS
+            <div id="video">
+                <video controls preload="auto">
+                    <source src ="" />
+                    <source src ="" />
+                    <source src ="" />
+                    <source src ="" />
+                </video>
+            </div> -->
+
+            <ul> Random pics
+
+                <li>
+                    <figure>
+                        <img src="./imgs/IMG_1411.PNG"
+                        alt=" Un mancito triste"
+                        sx={{
+                            width="200px"
+                            heigth="200px"
+                        }}>
+                    <figcaption>Codigos XD</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="./imgs/IMG_0667.JPG" 
+                        alt="aki debe haber una imagen"> 
+                        <figcaption>Un mikito  XD</figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ol>Lista ordenada
+                <li> ejercicio </li>
+                <li> estudiar</li>
+            </ol>
+        </main>
+        <footer>
+            <p> parrafo en el footer</p>
+
+        </footer>
+        <a href="">Soy un link </a>
     </body>
 
 </html>
